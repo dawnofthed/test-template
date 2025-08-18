@@ -9,21 +9,3 @@ domain names. Web users intending to access targeted websites are directed to th
 government, and greeted with a graphic bearing the seals of the United States Department of Justice (DOJ), the National
 Intellectual Property Rights Coordination Center (NIPRCC), and U.S. Immigration and Customs Enforcement (ICE).
 
-## Preview
-
-![Preview](./Preview.png)
-
-
-## Minify and Bundle Html
-
-A script using Bun has been implemented, which directly injects the CSS into the first existing `<style>` tag 
-within the document's `<head>`. Additionally, the MasterCSS script library has been removed when the script is executed,
-as the styles are now generated directly, making the dependency unnecessary with minify html.
-Furthermore, the script automatically minifies the code deleting comments and line breaks.
-
-Command to run the script:
-
-```shell
-bun run index.ts
-```
-
